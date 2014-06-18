@@ -97,7 +97,7 @@
 
 (defmethod clean-pom 'dependencies [x]
   (let [test? (fn [t] (= :test (first t)))
-        deps (filter (complement test?) (rest x))
+        deps (remove test? (rest x))
         testdeps (filter test? (rest x))]
     (concat ['dependencies] deps [(cons 'test (mapcat rest testdeps))])))
 
