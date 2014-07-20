@@ -1,6 +1,6 @@
 # pom-sexp
 
-A Clojure library designed to ... well, that part is up to you.
+Quick n' dirty experimentation; how straightforward is it to represent and work with POMs as sexps.  Still in Gist status
 
 ## Usage
 
